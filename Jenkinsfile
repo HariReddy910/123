@@ -18,3 +18,5 @@ pipeline{
 		               sh label: '', script: 'mvn package'
 		             }
 	     }
+    }
+}
