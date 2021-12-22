@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Deployment 
-      run: curl -v -u tomcat:tomcat -T /home/runner/work/123/123/webapp/target/webapp.war 'ec2-3-143-228-49.us-east-2.compute.amazonaws.com:8080/home/opt/tomcat8/webapps/test'
+      run: curl -v -u tomcat:tomcat -T /home/runner/work/123/123/webapp/target/webapp.war 'ec2-3-143-228-49.us-east-2.compute.amazonaws.com:8080//manager/text/deploy?path=/test_web'
